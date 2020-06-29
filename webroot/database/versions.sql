@@ -1,0 +1,1 @@
+UPDATE `versions` SET `financeiro`='9.15.3.19', `estoque`='0.6.3.19';

@@ -1,0 +1,12 @@
+ALTER TABLE `providers` CHANGE `telefone1` `telefone1` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `providers` CHANGE `cep` `cep` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `providers` CHANGE `estado` `estado` VARCHAR(2) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `providers` CHANGE `cidade` `cidade` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `providers` CHANGE `bairro` `bairro` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `providers` CHANGE `endereco` `endereco` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `customers` CHANGE `telefone1` `telefone1` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `customers` CHANGE `estado` `estado` VARCHAR(2) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `customers` CHANGE `cidade` `cidade` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `customers` CHANGE `cep` `cep` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `customers` CHANGE `bairro` `bairro` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `customers` CHANGE `endereco` `endereco` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
