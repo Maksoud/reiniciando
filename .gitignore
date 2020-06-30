@@ -1,7 +1,7 @@
-/config/app.php
-/tmp/*
-/logs/*
-/webroot/backup/*
-/webroot/img/uploads/*
-*.log
+# /config/app.php
+# /tmp/*
+# /logs/*
+# /webroot/backup/*
+# /webroot/img/uploads/*
+# *.log
 *.DS_Store
