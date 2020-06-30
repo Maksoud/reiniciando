@@ -1,1 +1,0 @@
-ALTER TABLE `regs` CHANGE `parameters_id` `parameters_id` INT(11) NULL;

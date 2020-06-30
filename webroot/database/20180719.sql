@@ -1,1 +1,0 @@
-INSERT INTO `plans` (id, created, modified, title, value) VALUES (0, '2018-07-19 16:59:59', '2018-07-19 16:59:59', 'Limitado', 0.00);
