@@ -55,11 +55,13 @@ Esse projeto teve o início de seu desenvolvimento em março de 2016, visando at
 
 ## Passos para instalação do projeto em um servidor local
 
- - Foi utilizado nesse projeto o PHP 7.3, CakePHP 3.4, banco de dados MySQL e o Apache.
- - O SQL do esquelelto do banco de dados encontra-se na raíz do projeto.
+ - Foi utilizado nesse projeto o PHP 7.0, CakePHP 3.4, banco de dados MySQL e o Apache.
+ - O SQL do esquelelto do banco de dados (banco_de_dados.sql) encontra-se na raíz do projeto.
  - As configurações de e-mail (envio de alertas semanais e diários das contas a pagar/receber), dados de acesso ao banco de dados e código de segurança da aplicação (Security Salt) são configurados no arquivo config/app.php.
  - É necessário modificar o arquivo php.ini para adicionar as variáveis intl (extension=php_intl.dll).
  - É importante redefinir as permissões de acesso da pasta tmp na raíz do projeto.
+ - O diretório webroot/database contém arquivos SQL que serão lidos pelo sistema para atualização do banco de dados, ao selecionar a opção update no menu do sistema.
+ - Os dados de acesso do FTP remoto para gravação das cópias de backup, encontram-se no arquivo src/Controller/Component/FtpComponent.php.
 
 ## Considerações Finais
 
