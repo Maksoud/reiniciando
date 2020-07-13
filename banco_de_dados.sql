@@ -7,7 +7,7 @@
 -- Server version: 10.3.23-MariaDB
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET time_zone = "-03:00";
 
 
 -- --------------------------------------------------------
@@ -694,6 +694,16 @@ CREATE TABLE IF NOT EXISTS `plans` (
   `title` varchar(255) NOT NULL,
   `value` double(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `plans`
+--
+
+INSERT INTO `plans` (`id`, `created`, `modified`, `title`, `value`) VALUES
+(1, '2015-07-01 10:40:00', '2015-07-01 10:40:00', 'Pessoal', 123.45),
+(2, '2015-07-01 10:40:00', '2015-07-01 10:40:00', 'Simples', 234.56),
+(3, '2015-07-01 10:40:00', '2015-07-01 10:40:00', 'Completo', 345.67),
+(4, '2015-07-01 16:59:59', '2015-07-01 16:59:59', 'Limitado', 0.00);
 
 -- --------------------------------------------------------
 
@@ -1849,7 +1859,7 @@ ALTER TABLE `plannings`
 -- AUTO_INCREMENT for table `plans`
 --
 ALTER TABLE `plans`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `products`
 --
