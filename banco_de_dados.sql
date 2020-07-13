@@ -636,12 +636,6 @@ CREATE TABLE IF NOT EXISTS `parameters` (
 INSERT INTO `parameters` (`id`, `created`, `modified`, `razao`, `ie`, `cpfcnpj`, `tipo`, `email_cobranca`, `endereco`, `bairro`, `cidade`, `estado`, `cep`, `telefone`, `fundacao`, `logomarca`, `username`, `dtvalidade`, `plans_id`, `systemver`) VALUES
 (1, '2015-07-01 09:06:37', '2015-07-01 09:06:37', 'Maksoud Rodrigues', '12345', '000.000.000-00', 'F', 'suporte@reiniciando.com.br', 'Rua Sem Nome, 0', 'Farol', 'Maceió', 'AL', '57055-000', '(82) 98133-5598', '1986-02-08', NULL, 'Renée Maksoud', '2030-01-01', 1, 2);
 
---
--- AUTO_INCREMENT for table `parameters`
---
-ALTER TABLE `parameters`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
-
 -- --------------------------------------------------------
 
 --
@@ -989,12 +983,6 @@ INSERT INTO `rules` (`id`, `created`, `rule`) VALUES
 (3, '2016-08-19 19:41:00', 'user'),
 (4, '2016-08-19 19:41:00', 'cont');
 
---
--- AUTO_INCREMENT for table `rules`
---
-ALTER TABLE `rules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
-
 -- --------------------------------------------------------
 
 --
@@ -1210,12 +1198,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `created`, `modified`, `name`, `username`, `password`, `sendmail`, `redefinir_senha`, `tutorial`, `language`, `last_parameter`, `module`) VALUES
 (1, '2015-07-01 09:06:37', '2015-07-01 09:06:37', 'Renée Maksoud', 'suporte@reiniciando.com.br', 'criptografada', 'S', '', '0', 'pt_BR', 1, 'A');
 
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
-
 -- --------------------------------------------------------
 
 --
@@ -1237,12 +1219,6 @@ CREATE TABLE IF NOT EXISTS `users_parameters` (
 
 INSERT INTO `users_parameters` (`id`, `parameters_id`, `sendmail`, `created`, `users_id`, `rules_id`) VALUES
 (1, 1, 'N', '2015-07-01 09:06:37', 1, 1);
-
---
--- AUTO_INCREMENT for table `users_parameters`
---
-ALTER TABLE `users_parameters`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 
 -- --------------------------------------------------------
 
@@ -1858,7 +1834,7 @@ ALTER TABLE `moviment_recurrents`
 -- AUTO_INCREMENT for table `parameters`
 --
 ALTER TABLE `parameters`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `payments`
 --
@@ -1933,7 +1909,7 @@ ALTER TABLE `requisition_items`
 -- AUTO_INCREMENT for table `rules`
 --
 ALTER TABLE `rules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `sells`
 --
@@ -1968,9 +1944,9 @@ ALTER TABLE `transporters`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `users_parameters`
 --
 ALTER TABLE `users_parameters`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
