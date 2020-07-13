@@ -104,7 +104,7 @@ class AppController extends Controller
         $validatePlans = $this->SystemFunctions->validatePlans($this->request->params['controller'], $this->request->params['action'], $this->request->Session()->read());
         
         //Verifica o status do retorno e trata
-        if ($validatePlans['status'] != 'ok' && $validatePlans['status'] != null) {
+        if (isset($validatePlans['status']) && $validatePlans['status'] != 'ok' && $validatePlans['status'] != null) {
 
             //Define mensagem de retorno
             if (!empty($validatePlans['message'])) { $this->Flash->error($validatePlans['message']); }
