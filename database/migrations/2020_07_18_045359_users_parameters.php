@@ -16,6 +16,14 @@ class UsersParameters extends Migration
         Schema::create('users_parameters', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId('parameters_id');
+            $table->foreignId('users_id');
+            $table->foreignId('roles_id');
+            $table->boolean('mailler');
+            
+            $table->foreign('parameters_id')->references('id')->on('parameters')->onDelete('cascade');
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('roles_id')->references('id')->on('roles');
         });
     }
 

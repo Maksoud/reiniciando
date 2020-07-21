@@ -15,7 +15,13 @@ class MovementMergeds extends Migration
     {
         Schema::create('movement_mergeds', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('parameters_id');
+            $table->foreignId('movements_id');
+            $table->foreignId('movements_merged');
+            
+            $table->foreign('parameters_id')->references('id')->on('parameters')->onDelete('cascade');
+            $table->foreign('movements_id')->references('id')->on('movements')->onDelete('cascade');
+            $table->foreign('movements_merged')->references('id')->on('movements')->onDelete('cascade');
         });
     }
 

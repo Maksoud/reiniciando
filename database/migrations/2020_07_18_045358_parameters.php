@@ -33,7 +33,7 @@ class Parameters extends Migration
             $table->string('phone2')->nullable();
             $table->string('logo')->nullable();
             $table->date('bill_date');
-                        
+
             $table->foreign('plans_id')->references('id')->on('plans');
         });
     }

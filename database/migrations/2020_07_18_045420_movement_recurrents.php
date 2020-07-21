@@ -15,7 +15,13 @@ class MovementRecurrents extends Migration
     {
         Schema::create('movement_recurrents', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('parameters_id');
+            $table->foreignId('movements_id');
+            $table->foreignId('movement_cards_id');
+            
+            $table->foreign('parameters_id')->references('id')->on('parameters')->onDelete('cascade');
+            $table->foreign('movements_id')->references('id')->on('movements')->onDelete('cascade');
+            $table->foreign('movement_cards_id')->references('id')->on('movement_cards')->onDelete('cascade');
         });
     }
 
