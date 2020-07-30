@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\UsersParameter;
+use App\Card;
 use Illuminate\Http\Request;
 
-class UsersParametersController extends Controller
+class CardController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Plan;
+use App\DocumentType;
 use Illuminate\Http\Request;
 
-class PlansController extends Controller
+class DocumentTypeController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\MovementCheck;
+use App\UsersParameter;
 use Illuminate\Http\Request;
 
-class MovementChecksController extends Controller
+class UsersParameterController extends Controller
 {
     /**
      * Display a listing of the resource.

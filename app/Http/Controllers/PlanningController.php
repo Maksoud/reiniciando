@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Cost;
+use App\Planning;
 use Illuminate\Http\Request;
 
-class CostsController extends Controller
+class PlanningController extends Controller
 {
     /**
      * Display a listing of the resource.

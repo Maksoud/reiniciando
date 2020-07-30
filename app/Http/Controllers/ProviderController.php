@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\MovementCard;
+use App\Provider;
 use Illuminate\Http\Request;
 
-class MovementCardsController extends Controller
+class ProviderController extends Controller
 {
     /**
      * Display a listing of the resource.

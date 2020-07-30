@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\MovementBox;
+use App\MovementBank;
 use Illuminate\Http\Request;
 
-class MovementBoxesController extends Controller
+class MovementBankController extends Controller
 {
     /**
      * Display a listing of the resource.

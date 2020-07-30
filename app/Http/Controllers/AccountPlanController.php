@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Parameter;
+use App\AccountPlan;
 use Illuminate\Http\Request;
 
-class ParametersController extends Controller
+class AccountPlanController extends Controller
 {
     /**
      * Display a listing of the resource.

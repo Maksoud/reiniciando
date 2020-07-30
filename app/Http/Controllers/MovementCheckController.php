@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Reg;
+use App\MovementCheck;
 use Illuminate\Http\Request;
 
-class RegsController extends Controller
+class MovementCheckController extends Controller
 {
     /**
      * Display a listing of the resource.

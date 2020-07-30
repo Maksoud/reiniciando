@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Planning;
+use App\Parameter;
 use Illuminate\Http\Request;
 
-class PlanningsController extends Controller
+class ParameterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,7 +46,21 @@ class PlanningsController extends Controller
      */
     public function show($id)
     {
-        //
+	    //Consulta o dado pelo ID
+        $parameter = Parameter::where('id', $id)->first();
+        
+        if (!empty($parameter)) {
+	        
+	        //Consulta o plano do perfil atual
+	        $plan = $parameter->plan()->first();
+	        
+	        if (!empty($plan)) {
+		        
+		        //Envie para a View os dados da consulta
+		        
+	        }//if (!empty($plan))
+	        
+        }//if (!empty($parameter))
     }
 
     /**

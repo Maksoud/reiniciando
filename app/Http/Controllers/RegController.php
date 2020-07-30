@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\EventType;
+use App\Reg;
 use Illuminate\Http\Request;
 
-class EventTypesController extends Controller
+class RegController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,7 +46,21 @@ class EventTypesController extends Controller
      */
     public function show($id)
     {
-        //
+	    //Consulta o dado pelo ID
+        $reg = Reg::where('id', $id)->first();
+        
+        if (!empty($reg)) {
+	        
+	        //Consulta o plano do perfil atual
+	        $user = $reg->user()->first();
+	        
+	        if (!empty($user)) {
+		        
+		        //Envie para a View os dados da consulta
+		        
+	        }//if (!empty($user))
+	        
+        }//if (!empty($reg))
     }
 
     /**

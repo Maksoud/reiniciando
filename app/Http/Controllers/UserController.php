@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Box;
+use App\User;
 use Illuminate\Http\Request;
 
-class BoxesController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -35,7 +35,17 @@ class BoxesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User();
+        
+        $user->name     = $request->name;
+        $user->email    = $request->email;
+        $user->language = $request->language;
+        
+        if ($user->save()) {
+	        
+	        //
+	        
+        }//if ($user->save())
     }
 
     /**
@@ -46,7 +56,21 @@ class BoxesController extends Controller
      */
     public function show($id)
     {
-        //
+	    //Consulta o dado pelo ID
+        $user = User::where('id', $id)->first();
+        
+        if (!empty($user)) {
+	        
+	        //Consulta o plano do perfil atual
+	        $regs = $user->regs()->get();
+	        
+	        if (!empty($regs)) {
+		        
+		        //Envie para a View os dados da consulta
+		        
+	        }//if (!empty($user))
+	        
+        }//if (!empty($user))
     }
 
     /**

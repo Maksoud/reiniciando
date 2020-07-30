@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Transfer;
 use Illuminate\Http\Request;
 
-class AccountPlansController extends Controller
+class TransferController extends Controller
 {
     /**
      * Display a listing of the resource.

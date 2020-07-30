@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Transfer;
+use App\Cost;
 use Illuminate\Http\Request;
 
-class TransfersController extends Controller
+class CostController extends Controller
 {
     /**
      * Display a listing of the resource.

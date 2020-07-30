@@ -18,98 +18,98 @@ Route::get('/', function () {
 });
 
 //AccountPlans
-Route::resource('/accountPlans', 'AccountPlansController');
-Route::get('/accountPlans/{id}', 'AccountPlansController@show');
+Route::resource('/accountPlan', 'AccountPlanController');
+Route::get('/accountPlan/{id}', 'AccountPlanController@show');
 
 //Balances
-Route::resource('/balances', 'BalancesController');
-Route::get('/balances/{id}', 'BalancesController@show');
+Route::resource('/balance', 'BalanceController');
+Route::get('/balance/{id}', 'BalanceController@show');
 
 //Banks
-Route::resource('/banks', 'BanksController');
-Route::get('/banks/{id}', 'BanksController@show');
+Route::resource('/bank', 'BankController');
+Route::get('/bank/{id}', 'BankController@show');
 
 //Boxes
-Route::resource('/boxes', 'BoxesController');
-Route::get('/boxes/{id}', 'BoxesController@show');
+Route::resource('/box', 'BoxController');
+Route::get('/box/{id}', 'BoxController@show');
 
 //Cards
-Route::resource('/cards', 'CardsController');
-Route::get('/cards/{id}', 'CardsController@show');
+Route::resource('/card', 'CardController');
+Route::get('/card/{id}', 'CardController@show');
 
 //Costs
-Route::resource('/costs', 'CostsController');
-Route::get('/costs/{id}', 'CostsController@show');
+Route::resource('/cost', 'CostController');
+Route::get('/cost/{id}', 'CostController@show');
 
 //Customers
-Route::resource('/customers', 'CustomersController');
-Route::get('/customers/{id}', 'CustomersController@show');
+Route::resource('/customer', 'CustomerController');
+Route::get('/customer/{id}', 'CustomerController@show');
 
 //DocumentTypes
-Route::resource('/documentTypes', 'DocumentTypesController');
-Route::get('/documentTypes/{id}', 'DocumentTypesController@show');
+Route::resource('/documentType', 'DocumentTypeController');
+Route::get('/documentType/{id}', 'DocumentTypeController@show');
 
 //EventTypes
-Route::resource('/eventTypes', 'EventTypesController');
-Route::get('/eventTypes/{id}', 'EventTypesController@show');
+Route::resource('/eventType', 'EventTypeController');
+Route::get('/eventType/{id}', 'EventTypeController@show');
 
 //Knowledge
 Route::resource('/knowledge', 'KnowledgeController');
 Route::get('/knowledge/{id}', 'KnowledgeController@show');
 
 //MovementBanks
-Route::resource('/movementBanks', 'MovementBanksController');
-Route::get('/movementBanks/{id}', 'MovementBanksController@show');
+Route::resource('/movementBank', 'MovementBankController');
+Route::get('/movementBank/{id}', 'MovementBankController@show');
 
 //MovementBoxes
-Route::resource('/movementBoxes', 'MovementBoxesController');
-Route::get('/movementBoxes/{id}', 'MovementBoxesController@show');
+Route::resource('/movementBox', 'MovementBoxController');
+Route::get('/movementBox/{id}', 'MovementBoxController@show');
 
 //MovementCards
-Route::resource('/movementCards', 'MovementCardsController');
-Route::get('/movementCards/{id}', 'MovementCardsController@show');
+Route::resource('/movementCard', 'MovementCardController');
+Route::get('/movementCard/{id}', 'MovementCardController@show');
 
 //MovementChecks
-Route::resource('/movementChecks', 'MovementChecksController');
-Route::get('/movementChecks/{id}', 'MovementChecksController@show');
+Route::resource('/movementCheck', 'MovementCheckController');
+Route::get('/movementCheck/{id}', 'MovementCheckController@show');
 
 //Movements
-Route::resource('/movements', 'MovementsController');
-Route::get('/movements/{id}', 'MovementsController@show');
+Route::resource('/movement', 'MovementController');
+Route::get('/movement/{id}', 'MovementController@show');
 
 //Parameters
-Route::resource('/parameters', 'ParametersController');
-Route::get('/parameters/{id}', 'ParametersController@show');
+Route::resource('/parameter', 'ParameterController');
+Route::get('/parameter/{id}', 'ParameterController@show');
 
 //Plannings
-Route::resource('/plannings', 'PlanningsController');
-Route::get('/plannings/{id}', 'PlanningsController@show');
+Route::resource('/planning', 'PlanningController');
+Route::get('/planning/{id}', 'PlanningController@show');
 
 //Plans
-Route::resource('/plans', 'PlansController');
-Route::get('/plans/{id}', 'PlansController@show');
+Route::resource('/plan', 'PlanController');
+Route::get('/plan/{id}', 'PlanController@show');
 
 //Providers
-Route::resource('/providers', 'ProvidersController');
-Route::get('/providers/{id}', 'ProvidersController@show');
+Route::resource('/provider', 'ProviderController');
+Route::get('/provider/{id}', 'ProviderController@show');
 
 //Regs
-Route::resource('/regs', 'RegsController');
-Route::get('/regs/{id}', 'RegsController@show');
+Route::resource('/reg', 'RegController');
+Route::get('/reg/{id}', 'RegController@show');
 
 //Roles
-Route::resource('/roles', 'RolesController');
-Route::get('/roles/{id}', 'RolesController@show');
+Route::resource('/role', 'RoleController');
+Route::get('/role/{id}', 'RoleController@show');
 
 //Transfers
-Route::resource('/transfers', 'TransfersController');
-Route::get('/transfers/{id}', 'TransfersController@show');
+Route::resource('/transfer', 'TransferController');
+Route::get('/transfer/{id}', 'TransferController@show');
 
 //Users
-Route::resource('/users', 'UsersController');
-Route::get('/users/{id}', 'UsersController@show');
+Route::resource('/user', 'UserController');
+Route::get('/user/{id}', 'UserController@show');
 
 //UsersParameters
-Route::resource('/usersParameters', 'UsersParametersController');
-Route::get('/usersParameters/{id}', 'UsersParametersController@show');
+Route::resource('/usersParameter', 'UsersParameterController');
+Route::get('/usersParameter/{id}', 'UsersParameterController@show');
 

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\DocumentType;
+use App\Plan;
 use Illuminate\Http\Request;
 
-class DocumentTypesController extends Controller
+class PlanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,7 +46,21 @@ class DocumentTypesController extends Controller
      */
     public function show($id)
     {
-        //
+        //Consulta o dado pelo ID
+        $plan = Plan::where('id', $id)->first();
+        
+        if (!empty($plan)) {
+	        
+	        //Consulta os perfis que utilizam o plano
+	        $parameters = $plan->parameter()->get();
+	        
+	        if (!empty($parameters)) {
+		        
+		        //Envie para a View os dados da consulta
+		        
+	        }//if (!empty($parameters))
+	        
+        }//if (!empty($plan))
     }
 
     /**
