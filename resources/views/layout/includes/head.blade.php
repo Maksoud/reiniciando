@@ -12,15 +12,19 @@
 <!-- Ionicons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-<link href="{{ asset('css/bootstrap-tagsinput-typeahead.css') }}" rel="stylesheet">
-<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
+<link href="{{ asset('css/AdminLTE.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/bootstrap-datepicker3.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/bootstrap-multiselect.min.css') }}" rel="stylesheet">
-<link href="{{ asset('css/maksoud.min.css') }}" rel="stylesheet">
-<link href="{{ asset('css/jquery.dataTables.min.css') }}" rel="stylesheet">
-<link href="{{ asset('css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/bootstrap-treeview.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/datatables.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/home.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/jquery.dataTables.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/login.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/maksoud.min.css') }}" rel="stylesheet">
 
 <!--Fonte utilizada no 'Você sabia?' e login-->
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
