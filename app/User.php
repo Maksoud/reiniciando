@@ -18,7 +18,7 @@ class Users extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'language', 'last_parameter'
     ];
 
     /**
@@ -38,4 +38,19 @@ class Users extends Model
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function parameters()
+    {
+	    return $this->belongsToMany('App\Parameter', 'users_parameters', 'users_id', 'parameters_id');
+    }
+    
+    public function roles()
+    {
+	    return $this->belongsToMany('App\Role', 'users_parameters', 'users_id', 'roles_id');
+    }
+    
+    public function regs()
+    {
+	    return $this->hasMany('App\Reg', 'users_id', 'id');
+    }
 }
