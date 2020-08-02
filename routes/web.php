@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
+
+Route::get('login/facebook', 'SocialiteController@redirectToProvider');
+Route::get('login/facebook/callback', 'SocialiteController@handleProviderCallback');
 
 //AccountPlans
 Route::resource('/accountPlan', 'AccountPlanController');
