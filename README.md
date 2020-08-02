@@ -85,7 +85,7 @@ Esse projeto teve o início de seu desenvolvimento em março de 2016, visando at
 
  - PHP 7.4, Laravel 7.19, banco de dados MySQL e o Apache.
  - O SQL do esquelelto do banco encontra-se na raíz do projeto em 'banco_de_dados.sql'.
- - O usuário para acesso é o **suporte@reiniciando.com.br** e a senha de acesso é **12345**.
+ - O usuário para acesso é o **suporte@reiniciando.com.br** e a senha de acesso é **reiniciando**.
  - Endereço de acesso é o **https://reiniciando.maksoud.dev**
 
 
