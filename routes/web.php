@@ -116,3 +116,7 @@ Route::get('/user/{id}', 'UserController@show');
 Route::resource('/usersParameter', 'UsersParameterController');
 Route::get('/usersParameter/{id}', 'UsersParameterController@show');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
